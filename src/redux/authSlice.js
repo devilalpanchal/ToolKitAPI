@@ -31,8 +31,6 @@ return singleData.data
   }catch(err){
 return thunkApi.rejectWithValue(err)
   }
-
-
 })
 
 const authSlice = createSlice({

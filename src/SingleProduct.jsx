@@ -1,14 +1,18 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
 
 const SingleProduct = () => {
-    const {singleData}=useSelector(state=>state.auth)
-    console.log(singleData)
+  const { singleData } = useSelector((state) => state.auth);
+  console.log(singleData);
   return (
     <div>
-      single Product
+     {
+      singleData.map(()=>{
+        
+      })
+     }
     </div>
-  )
-}
+  );
+};
 
-export default SingleProduct
+export default SingleProduct;
